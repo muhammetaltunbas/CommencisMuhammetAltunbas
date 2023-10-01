@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Suite" duration-ms="122197" started-at="2023-10-01T11:08:09 EET" finished-at="2023-10-01T11:10:11 EET">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@6253c26]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="122197" started-at="2023-10-01T11:08:09 EET" finished-at="2023-10-01T11:10:11 EET">
+      <class name="testRunners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunner@6253c26]" name="setUpClass" is-config="true" duration-ms="168" started-at="2023-10-01T11:08:09 EET" finished-at="2023-10-01T11:08:09 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@6253c26]" name="runScenario" duration-ms="76587" started-at="2023-10-01T11:08:09 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-01T11:09:26 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that each latest news if they have expected information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Tech Blog Website]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@6253c26]" name="runScenario" duration-ms="44985" started-at="2023-10-01T11:09:26 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-01T11:10:11 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that full content news has expected information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Tech Blog Website]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at stepDefinitions.TestNews.check_the_links_within_the_news_content(TestNews.java:50)
+at ✽.Check the links within the news content(file:///Users/maltunbas/git/CommencisMuhammetAltunbas/src/test/java/features/LatestNews.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@6253c26]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2023-10-01T11:10:11 EET" finished-at="2023-10-01T11:10:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Test Suite -->
+</testng-results>
